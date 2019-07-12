@@ -128,8 +128,8 @@ header {
 }
 .img{
     width: 100%;
-    height: 400px;
-    background: #3D7EF1 url('./assets/img.jpg') content-box center;
+    height: 370px;
+    background: #3D7EF1 url('./assets/img.jpg') content-box center no-repeat;
     background-size: 100%;
 }
 .box2 .content{
