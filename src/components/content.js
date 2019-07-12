@@ -22,7 +22,7 @@ class Content extends React.Component{
                         <ul>
                         {this.props.list ? this.props.list.map((item,i)=>{
                             return <li key={i} className='list'>
-                            {item.id} {item.title}
+                            {item.title}
                             </li>}):null}
                         </ul> 
                      </div>

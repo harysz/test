@@ -159,6 +159,9 @@ header {
     margin:0 0;
     margin-bottom: 60px;
 }
+.content2 .box2 .title{
+    font-size: 30px;
+}
 
 .content2 .box2{
     margin-left: 50px;
@@ -215,3 +218,94 @@ header {
     width: 50%;
     line-height: 25px;
 }
+.part1 .title{
+    position: relative;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.part1 .title::after{
+content: "__";
+position: absolute;
+bottom:5px;
+left: -1px;
+padding:0;
+margin:0;
+font-size: 72px;
+}
+.box1 .title{
+    font-size: 30px;
+}
+.form .part2{
+position: relative;
+left: 0;
+margin: 0 auto;
+width: 40%;
+}
+.part2 .send{
+    left:0;
+    bottom:-30px;
+    border: #3D7EF1 4px solid;
+    color: #3D7EF1;
+    width: 90px;
+}
+.part2 input{
+    margin-bottom: 10px;
+    width: 90%;
+    height: 25px;
+}
+.part2 h3{
+    font-size: 18px;
+}
+.part2 textarea{
+    width: 90%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.footer{
+    background: #000;
+    height: 200px;
+    width: 100%;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+}
+.footer p{
+    width: 40%;
+    margin:auto;
+    color:#aaaaaa;
+}
+.footer .logo{
+    position: absolute;
+    bottom: 20px;
+    width:  220px;
+    right:0;
+}
+.footer .logo .title{
+    font-weight: 100;
+    font-size: 14px;
+    align-content: center;
+    text-align: center;
+    color: #aaa;
+}
+.footer .logo .title:nth-child(2){
+    font-weight:600;
+    color:#fff;
+}
+.footer .logo .title:nth-child(4){
+    margin-left: 10px;
+    color:#aaaaaa;
+}
+.footer .wrapper{
+    width: 40%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 40px;
+    margin-right:40px ;
+}
+.wrapper .item{
+    font-weight: 600;
+}
+

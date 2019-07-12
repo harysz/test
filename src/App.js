@@ -5,6 +5,7 @@ import Content from './components/content';
 import './style.css';
 import axios from 'axios';
 import Contact from './components/contact';
+import Footer from './components/footer';
 class App extends React.Component {
   state={
       header:{
@@ -23,8 +24,6 @@ class App extends React.Component {
           }
         }
       }
-    
-
    getData(){
      axios.get('https://jsonplaceholder.typicode.com/posts')
      .then((res)=>{
@@ -61,6 +60,12 @@ class App extends React.Component {
      list={list}
     />
     <Contact/>
+    <footer>
+    <Footer 
+    title={header.title} 
+    pages={header.pages}
+    />
+    </footer>
     </div>
    );
   }

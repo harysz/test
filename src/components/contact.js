@@ -10,9 +10,13 @@ const Contact =(props)=>{
                 <br/>passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
             </div>
             <div className='part2'>
+                <h3>NAME</h3>
                 <input className='name' type='text'></input>
+                <h3>EMAIL</h3>
                 <input className='email' type='email'></input>
+                <h3>MESSAGE</h3>
                 <textarea className='message'></textarea>
+                <div className='btn send'>SEND</div>
             </div>
         </div>
     )
