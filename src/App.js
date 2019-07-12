@@ -4,6 +4,7 @@ import Container from './components/container';
 import Content from './components/content';
 import './style.css';
 import axios from 'axios';
+import Contact from './components/contact';
 class App extends React.Component {
   state={
       header:{
@@ -22,22 +23,31 @@ class App extends React.Component {
           }
         }
       }
+    
+
    getData(){
      axios.get('https://jsonplaceholder.typicode.com/posts')
      .then((res)=>{
      return res;
-     }).then((data)=>{
-       console.log(data);
-       const items =data.data;
-       this.setState({items})
+     }).then((res)=>{
+       const items =res.data;
+       const list=[];
+       for (let index = 0; index < 4; index++) { 
+        let random = Math.floor(Math.random() * Math.floor(99));
+        list.push(items[random]);
+      }
+      (list>0 ? console.log('asd') : this.setState({list}))
      })
    }
+ 
    componentDidMount(){
-     this.getData();
+     this.getData(); 
+   
    }
   render(){
     const header =this.state.header;
     const container=this.state.container1;
+    const list=this.state.list;
     return (
     <div className="App">
     <header>
@@ -47,7 +57,10 @@ class App extends React.Component {
       box1={container.box1}
       box2={container.box2}
     />
-    <Content/>
+    <Content
+     list={list}
+    />
+    <Contact/>
     </div>
    );
   }

@@ -1,9 +1,10 @@
 import React from 'react';
-
 class Content extends React.Component{
+    
 
     render(){
-        return(
+        
+       return(
             <div className='content2'>
              <div className='box1'>
                  <h2 className='title'>web development</h2>
@@ -19,7 +20,10 @@ class Content extends React.Component{
                         <h2>Custom list</h2>
                         <p>Some heading</p>
                         <ul>
-
+                        {this.props.list ? this.props.list.map((item,i)=>{
+                            return <li key={i} className='list'>
+                            {item.id} {item.title}
+                            </li>}):null}
                         </ul> 
                      </div>
                      <div className='part2'>
