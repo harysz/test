@@ -4,18 +4,17 @@
     list-style-type: none;
 }
 
+@media screen and (max-width:2000px){
 body {
     width: 90%;
     margin: auto;
     background: #ffff;
 }
-
 header {
     background: #3D7EF1;
     width: 100%;
     margin: auto;
 }
-
 .header {
     width: 90%;
     margin: auto;
@@ -76,7 +75,7 @@ header {
 .container {
     display: flex;
     width: 90%;
-    margin: 60px auto;
+    margin: 30px auto !important;
     justify-content: space-around;
 }
 
@@ -182,6 +181,7 @@ header {
     color: #000;
     background: #fff;
     padding:20px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -305,7 +305,70 @@ width: 40%;
     margin-top: 40px;
     margin-right:40px ;
 }
-.wrapper .item{
-    font-weight: 600;
+.wrapper .item{font-weight: 600;}
 }
 
+@media screen 
+and (min-width:768px)
+and (max-width:1024px){
+    body{width: 100%!important;}
+    header{width:100%;}
+    .textTop{width: 100%!important;}
+    .textTop .items{font-size: 11px!important;}
+    .header .container .nav {width: 60%}
+    .container{margin:0 0; width: 100%;}
+    .container .box1{width: 35%!important; padding : 15px;}
+    .container .box2{width: 60%;}
+    .box2 .img{ background: cover; height: 340px;}
+    .box2 .content{margin: 40px auto;}
+    .content2{width: 99%!important;}
+    .content2 .box1{width: 30%;}
+    .content2 .title {font-size: 28px;}
+    .content2 .table{width: 90%!important; padding:15px;}
+    .form{width: 90%;}
+    .form .part1 .title{font-size: 26px;}
+    .form .part1 .title::after{ content:'__'; font-size: 40px;}
+    .footer p{font-size: 14px;}
+    .footer .wrapper{width: 55%;margin:40px 10px;}
+    .footer .wrapper .item{font-size: 16px;}
+    }
+
+@media screen and (min-device-width:319px) and (max-device-width:736px){
+body{width: 100%;margin:auto;}
+header{width: 100vw;margin:0 0;}
+.header {width: 99%; padding:2px;}
+.header .container{width: 100%;justify-content: space-evenly;}
+.header .logo {font-size: 15px;width: 40%;}
+.header .nav{width: 50%;display: grid;grid-template-areas: 'a a a'}
+.header .nav .page{font-size: 10px;width: 100%;}
+.header .textTop{width: 100%; margin: 0 0;}
+.header .textTop .items{margin: 0 4px;font-size: 8px;}
+.container{display: block; height: auto;margin:10px 0 !important;padding:0;}
+.container .box1 .btn{bottom:0;right: 10px; width: 20%}
+.container .box1{width: 99vw;height:auto; margin:auto;padding:10px 0;}
+.container .box2{width: 99vw ;height:auto; margin:10px auto;}
+.container .box2 .img{width: 100% ;height:200px; margin:10px 0;}
+.container .box2 .content{width: 100% ;height:auto;margin:2px 5px;}
+.container .box2 .content .text{font-size: 14px;}
+.content{width: 99%;}
+.content2{width: 100%;display: block; padding: 10px 0;height: auto;background-color: #fff;}
+.content2 .box1{width: 99vw !important; height: auto;margin:0 !important; padding: 0;}
+.content2 .box1 .title{height: auto; margin: 10px;}
+.content2 .box2{width: 99vw;margin:0 0; height: auto;}
+.content2 .box2 .title{margin:10px;}
+.content2 .box2 .table{padding:0 0;width: 100%;}
+.form{width: 95%; padding:0;margin:10px 5px; display: block; height: auto;}
+.form .part1{width: 100%; margin:10px 0; height: auto;}
+.form .part1 p{font-size: 14px;}
+.form .part2{width: 100%; margin:auto;height: 300px;}
+.form .part2 input{width: 99%;}
+.form .part2 .message{width: 99%;}
+.form .part2 .send{bottom:-10px;}
+footer{width: 100%;overflow: hidden;}
+.footer p{font-size: 12px;margin:5px;width: 30%;}
+.footer .wrapper{margin: 0; width: 50%;overflow: visible;}
+.footer .wrapper .pages {margin: 0; width: 100%;display:grid;grid-template-areas: "a a a"}
+.footer .wrapper .item{width: auto;height: 50px;font-size: 14px;  margin-top: 20px;}
+.footer .wrapper .logo{right: 20px;}
+
+}
